@@ -1,0 +1,33 @@
+.c1, .c2{
+        height: 50px;
+        width: 50px;
+        position:absolute;
+        top:0px;
+      }
+      .c1{
+        background-color:red;
+        left:0px;
+      }
+      .c2{
+        background-color:green;
+        right:0px;
+      }
+      body{
+          background-color:black;
+      }
+      @media (max-width: 100px){
+        .c1, .c2{
+          position:relative;
+          top:unset;
+        }
+      }
+      @media (max-width: 300px){
+        body{
+          background-color:yellow;
+        }
+      }
+      @media (max-width: 500px) and (min-width:301px) {
+        body{
+          background-color:blue;
+        }
+      }
